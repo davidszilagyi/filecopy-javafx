@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.Main">
+   <children>
+      <Button fx:id="stopAll" layoutX="331.0" layoutY="300.0" mnemonicParsing="false" onAction="#stopCopies" text="Stop All" />
+      <Button fx:id="chooserBtn" layoutX="14.0" layoutY="300.0" mnemonicParsing="false" onAction="#showChooser" prefHeight="25.0" prefWidth="57.0" text="Copy" />
+      <ScrollPane fx:id="mainPane" layoutX="14.0" layoutY="14.0" prefHeight="276.0" prefWidth="374.0" vbarPolicy="ALWAYS">
+         <content>
+            <Pane fx:id="copies" prefHeight="5.0" prefWidth="5.0">
+               <children>
+                  <Label fx:id="startText" layoutX="106.0" layoutY="129.0" text="Press &quot;Copy&quot; to start process..." />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
